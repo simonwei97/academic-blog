@@ -1,0 +1,54 @@
+<style>
+  /* toc style */
+
+#backTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 99;
+  background-color: transparent;
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  cursor: pointer;
+  font-size: 48px;
+  color: #80808080;
+}
+
+/* Media Queries */
+@media (max-width: 1080px) {
+#backTopBtn {
+  font-size: 48px;
+  right: 4px;
+  bottom: 4px;
+}
+}
+</style>
+
+<!--Scrollspy-->
+<aside>
+<button onclick="topFunction()" id="backTopBtn" title="Go to top"><i class="fa-solid fa-circle-up" style="font-size:48px;color:rgb(48, 48, 237)" aria-hidden="true"></i></button>
+</aside>
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("backTopBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  mybutton.style.display = "block";
+  } else {
+  mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>

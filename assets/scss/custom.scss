@@ -1,0 +1,40 @@
+.article-container {
+    max-width: 900px;
+    padding: 0 20px 0 20px;
+    margin: 0 auto 0 auto;
+    // font-size: 18px;
+}
+
+.docs-toc {
+    text-align: left;
+}
+
+.docs-article-container {
+    max-width: 1000px;
+}
+
+#TableOfContents li a {
+  line-height: 20px
+}
+
+.btn-copy-code {
+    color: black;
+    margin-bottom: 10px;
+    height: 25px;
+    width: 9%;
+    padding: 6px;
+    font-size: .75rem;
+    font-weight: 400;
+    // background: #E9B578;
+    border: 0;
+}
+  
+.btn-copy-code::before {
+    font-family: fontAwesome;
+    content: "\f0c5\00a0";
+}
+
+.content-widget-hr .avatar-square {
+    -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
