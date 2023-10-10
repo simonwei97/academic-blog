@@ -61,7 +61,8 @@ locale:
 
 features:
   syntax_highlighter:
-    theme_light: tango
+    theme_light: monokai
+    # theme_light: tango
     # theme_dark: xcode-dark
     # theme_light: perldoc
     theme_dark: monokai
