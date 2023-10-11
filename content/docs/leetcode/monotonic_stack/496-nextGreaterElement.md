@@ -4,7 +4,7 @@ linktitle: 496. 下一个更大元素 I
 type: book
 date: "2019-05-05T00:00:00+01:00"
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 1
+weight: 2
 ---
 
 ## 描述
@@ -77,7 +77,7 @@ func nextGreaterElement(nums1 []int, nums2 []int) []int {
             }
             stack = stack[:len(stack)-1]
         }
-        stack = append(stack, i)
+        stack = append(stack, i)               // pop
     }
     return res
 }

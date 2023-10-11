@@ -4,7 +4,7 @@ linktitle: 84. 柱状图中最大的矩形
 type: book
 date: "2022-05-05T00:00:00+01:00"
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 1
+weight: 5
 ---
 
 [LeetCode Link](https://leetcode.cn/problems/largest-rectangle-in-histogram/)

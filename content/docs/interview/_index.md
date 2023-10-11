@@ -22,9 +22,10 @@ icon_pack: fas
 
 - [Grokking System Design](https://github.com/Jeevan-kumar-Raj/Grokking-System-Design)
 - [Grokking System Design Interview(PDF)](https://github.com/Nitin96Bisht/System-Design/blob/master/Grokking%20System%20Design%20Interview.pdf)
-- [System Design Interview An Insider’s Guide by Alex Xu](https://github.com/G33kzD3n/Catalogue/blob/master/System%20Design%20Interview%20An%20Insider%E2%80%99s%20Guide%20by%20Alex%20Xu%20(z-lib.org).pdf)
+- [System Design Interview An Insider’s Guide by Alex Xu](<https://github.com/G33kzD3n/Catalogue/blob/master/System%20Design%20Interview%20An%20Insider%E2%80%99s%20Guide%20by%20Alex%20Xu%20(z-lib.org).pdf>)
 
 Other
+
 - [DDIA (Designing Data Intensive Applications)](https://dataintensive.net/)
 - [Distributed systems](https://book.mixu.net/distsys/single-page.html)
 
@@ -32,8 +33,18 @@ Other
 
 - [How to Answer the 64 Toughest Interview Questions](https://soulsearch.files.wordpress.com/2007/05/64interviewquestions1.pdf)
 
+### Code
+
+- [LeetCode Summary for Different Company](https://github.com/StevenSYT/leetcode-summary)
+
 ## Remote Job Info
 
 - [BetterRemote](https://www.betterremote.net/)
 - [Startups Job](https://startup.jobs/startups)
 - [Remote Engineer Jobs](https://freshremote.work/engineer-remote-jobs/)
+
+## Chinese Info
+
+- [小林 x 图解计算机基础](https://xiaolincoding.com/)
+- [Go 程序员面试笔试宝典](https://golang.design/go-questions/)
+- [《代码随想录》](https://github.com/youngyangyang04/leetcode-master)

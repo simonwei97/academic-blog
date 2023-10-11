@@ -24,9 +24,9 @@ main:
     parent: docs
     url: "docs/linux_notes"
     weight: 20
-  - name: Remote Job Info
+  - name: Interview Info
     parent: docs
-    url: "docs/remote_job"
+    url: "docs/interview"
     weight: 30
     
   # - name: Publications

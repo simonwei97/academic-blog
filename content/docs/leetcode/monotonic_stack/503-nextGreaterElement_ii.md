@@ -4,37 +4,31 @@ linktitle: 503. 下一个更大元素 II
 type: book
 date: "2019-05-05T00:00:00+01:00"
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 1
+weight: 3
 ---
 
 ## 描述
 
-`nums1` 中数字 `x` 的 **下一个更大元素** 是指 `x` 在 `nums2` 中对应位置 **右侧** 的 **第一个** 比 `x` 大的元素。
+给定一个循环数组 `nums` （ `nums[nums.length - 1]` 的下一个元素是 `nums[0]` ），返回 `nums` 中每个元素的 **下一个更大元素** 。
 
-给你两个 **没有重复元素** 的数组 `nums1` 和 `nums2` ，下标从 `0` 开始计数，其中 `nums1` 是 `nums2` 的子集。
-
-对于每个 `0 <= i < nums1.length` ，找出满足 `nums1[i] == nums2[j]` 的下标 `j` ，并且在 `nums2` 确定 `nums2[j]` 的 **下一个更大元素** 。如果不存在下一个更大元素，那么本次查询的答案是 `-1` 。
-
-返回一个长度为 `nums1.length` 的数组 `ans` 作为答案，满足 `ans[i]` 是如上所述的 **下一个更大元素** 。
+数字 `x` 的 **下一个更大的元素** 是按数组遍历顺序，这个数字之后的第一个比它更大的数，这意味着你应该循环地搜索它的下一个更大的数。如果不存在，则输出 `-1` 。
 
 **Example 1:**
 
-> Input: nums1 = [4,1,2], nums2 = [1,3,4,2].
+> Input: nums = [1,2,1]
 
-> Output: [-1,3,-1]
+> Output: [2,-1,2]
 
 **Example 2:**
 
-> Input: nums1 = [2,4], nums2 = [1,2,3,4].
+> Input: nums = [1,2,3,4,3]
 
-> Output: [3,-1]
+> Output: [2,3,4,-1,4]
 
 ## 提示 (Constraints)
 
-- `1 <= nums1.length <= nums2.length <= 1000`
-- `0 <= nums1[i], nums2[i] <= 10^4`
-- `nums1` 和 `nums2` 中所有整数 互不相同
-- `nums1` 中的所有整数同样出现在 `nums2` 中
+- `1 <= nums.length <= 10^4`
+- `-10^9 <= nums[i] <= 10^9`
 
 ## 分析
 
@@ -56,28 +50,22 @@ weight: 1
 {{< tab tabName="Go">}}
 
 ```golang
-func nextGreaterElement(nums1 []int, nums2 []int) []int {
-    res := make([]int, len(nums1))
+func nextGreaterElements(nums []int) []int {
+    res := make([]int, len(nums))
     for i := range res {
         res[i] = -1
     }
-
-    mapR := make(map[int]int, 0)
-    for i, v := range nums1 {
-        mapR[v] = i
+    if len(nums) == 0 {
+        return res
     }
-
-    stack := []int{0}
-
-    for i := 1; i < len(nums2); i++ {
-        for len(stack) > 0 && nums2[i] > nums2[stack[len(stack)-1]] {
-            top := stack[len(stack)-1]         // top index
-            if v, ok := mapR[nums2[top]]; ok { // check if exist
-                res[v] = nums2[i]
-            }
-            stack = stack[:len(stack)-1]
+    stack := []int{}
+    for i := 0; i < len(nums)*2; i++ {
+        for len(stack) > 0 && nums[i % len(nums)] > nums[stack[len(stack)-1]] {
+            index := stack[len(stack)-1]
+            res[index] = nums[i % len(nums)]
+            stack = stack[:len(stack)-1]       // pop
         }
-        stack = append(stack, i)
+        stack = append(stack, i % len(nums))
     }
     return res
 }
@@ -89,22 +77,17 @@ func nextGreaterElement(nums1 []int, nums2 []int) []int {
 
 ```py
 class Solution:
-    def nextGreaterElement(self, nums1: List[int], nums2: List[int]) -> List[int]:
-        result = [-1]*len(nums1)
-        stack = [0]
-        for i in range(1, len(nums2)):
-            # 情况一和情况二
-            if nums2[i] <= nums2[stack[-1]]:
-                stack.append(i)
-            # 情况三
-            else:
-                while len(stack) != 0 and nums2[i] > nums2[stack[-1]]:
-                    if nums2[stack[-1]] in nums1:
-                        index = nums1.index(nums2[stack[-1]])
-                        result[index] = nums2[i]
-                    stack.pop()
-                stack.append(i)
-        return result
+    def nextGreaterElements(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+        ret = [-1] * n
+        stk = list()
+
+        for i in range(n * 2 - 1):
+            while stk and nums[stk[-1]] < nums[i % n]:
+                ret[stk.pop()] = nums[i % n]
+            stk.append(i % n)
+
+        return ret
 ```
 
 {{< /tab >}}
