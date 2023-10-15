@@ -61,7 +61,7 @@ locale:
 
 features:
   syntax_highlighter:
-    theme_light: monokai
+    theme_light: perldoc
     # theme_light: tango
     # theme_dark: xcode-dark
     # theme_light: perldoc
@@ -98,7 +98,8 @@ features:
       index_name: ""
       show_logo: false
   map:
-    provider: "mapbox"
+    provider: ""
+    # provider: "mapbox"
     api_key: ""
     zoom: 15
 

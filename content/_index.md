@@ -271,6 +271,9 @@ sections:
           icon_pack: fas
           name: wxp_sampon@163.com
           link: "mailto:wxp_sampon@163.com"
+        - icon: map-marker
+          icon_pack: fas
+          name: ShenZhen, GuangDong, China
       # Automatically link email and phone or display as text?
       autolink: true
       coordinates:

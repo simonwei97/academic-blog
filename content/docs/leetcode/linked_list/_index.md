@@ -1,13 +1,13 @@
 ---
 # Title, summary, and page position.
-linktitle: 链表
-summary: 链表
+linktitle: 链表(Linked List)
+summary: LeetCode Linked List problems.
 weight: 2
 icon: book
 icon_pack: fas
 
 # Page metadata.
-title: 链表
+title: 链表(Linked List)
 date: "2022-09-09T00:00:00Z"
 type: book # Do not modify.
 ---
