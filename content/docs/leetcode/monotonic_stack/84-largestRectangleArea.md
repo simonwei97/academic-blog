@@ -7,7 +7,7 @@ date: "2022-05-05T00:00:00+01:00"
 weight: 5
 ---
 
-[LeetCode Link](https://leetcode.cn/problems/largest-rectangle-in-histogram/)
+[LeetCode Link](https://leetcode.com/problems/largest-rectangle-in-histogram/)
 
 ## 描述
 
@@ -49,10 +49,10 @@ weight: 5
 
 通过这种方式，可以在一次遍历中找到柱状图中最大的矩形面积。
 
-- 时间复杂度分析：`O(n)`
-  - 通过一次遍历即可计算出最大矩形面积。因此，时间复杂度为 `O(n)`，其中 `n` 是柱子的数量。
-- 空间复杂度分析：`O(n)`
-  - 算法使用了一个栈来存储柱子的索引，栈的最大长度为 `n`。因此，空间复杂度为 `O(n)`。
+- 时间复杂度分析：$O(n)$
+  - 通过一次遍历即可计算出最大矩形面积。因此，时间复杂度为 $O(n)$，其中 `n` 是柱子的数量。
+- 空间复杂度分析：$O(n)$
+  - 算法使用了一个栈来存储柱子的索引，栈的最大长度为 `n`。因此，空间复杂度为 $O(n)$。
 
 ## 代码
 

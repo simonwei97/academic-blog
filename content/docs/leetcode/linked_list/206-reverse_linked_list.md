@@ -11,7 +11,7 @@ weight: 3
 
 给你单链表的头节点 `head` ，请你反转链表，并返回反转后的链表。
 
-https://leetcode.cn/problems/reverse-linked-list/
+https://leetcode.com/problems/reverse-linked-list/
 
 **Example 1:**
 
@@ -44,8 +44,8 @@ https://leetcode.cn/problems/reverse-linked-list/
 
 ## 代码 (Code)
 
-- 时间复杂度：`O(n)`
-- 空间复杂度：`O(1)`
+- 时间复杂度：$O(n)$
+- 空间复杂度：$O(1)$
 
 {{< tabs tabTotal="4">}}
 {{< tab tabName="Go">}}

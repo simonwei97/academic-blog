@@ -14,7 +14,7 @@ weight: 2
 - 如果剩余字符少于 `k` 个，则将剩余字符全部反转。
 - 如果剩余字符小于 `2k` 但大于或等于 `k` 个，则反转前 `k` 个字符，其余字符保持原样。
 
-https://leetcode.cn/problems/reverse-string-ii/
+https://leetcode.com/problems/reverse-string-ii/
 
 **Example 1:**
 
@@ -42,8 +42,8 @@ https://leetcode.cn/problems/reverse-string-ii/
 
 ## 代码
 
-- 时间复杂度：`O(n)`
-- 空间复杂度：`O(1)`
+- 时间复杂度：$O(n)$
+- 空间复杂度：$O(1)$
 
 {{< tabs tabTotal="2">}}
 
@@ -86,7 +86,7 @@ class Solution:
             flag = not flag
         return res
 
-# https://leetcode.cn/problems/reverse-string-ii/solutions/292728/jian-duan-yi-li-jie-by-powcai/
+# https://leetcode.com/problems/reverse-string-ii/solutions/292728/jian-duan-yi-li-jie-by-powcai/
 ```
 
 {{< /tab >}}

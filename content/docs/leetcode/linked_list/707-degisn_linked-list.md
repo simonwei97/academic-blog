@@ -9,7 +9,7 @@ weight: 2
 
 ## 描述 (Description)
 
-https://leetcode.cn/problems/design-linked-list/description/
+https://leetcode.com/problems/design-linked-list/description/
 
 你可以选择使用单链表或者双链表，设计并实现自己的链表。
 

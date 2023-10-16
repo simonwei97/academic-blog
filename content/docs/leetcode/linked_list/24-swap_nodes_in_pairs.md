@@ -11,7 +11,7 @@ weight: 4
 
 给你一个链表，两两交换其中相邻的节点，并返回交换后链表的头节点。你必须在不修改节点内部的值的情况下完成本题（即只能进行**节点交换**）。
 
-https://leetcode.cn/problems/swap-nodes-in-pairs/
+https://leetcode.com/problems/swap-nodes-in-pairs/
 
 **Example 1:**
 
@@ -43,9 +43,9 @@ https://leetcode.cn/problems/swap-nodes-in-pairs/
 ## 代码 (Code)
 
 - 时间复杂度：
-  - `O(n)`：两两交换需要遍历整个链表，每次操作需要 `O(1)` 复杂度
+  - $O(n)$：两两交换需要遍历整个链表，每次操作需要 $O(1)$ 复杂度
 - 空间复杂度：
-  - `O(1)`：使用常数级的额外空间，不随 `N` 变化
+  - $O(1)$：使用常数级的额外空间，不随 `N` 变化
 
 {{< tabs tabTotal="4">}}
 {{< tab tabName="Go">}}

@@ -1,9 +1,9 @@
 ---
 # Display name
-title: Simon Wei
+title: Xiaopeng Wei
 
 # Full name (for SEO)
-first_name: Simon
+first_name: Xiaopeng
 last_name: Wei
 
 # Status emoji
@@ -27,7 +27,8 @@ organizations:
 # Interests to show in About widget
 interests:
   - Distributed System Design
-  - Cloud Native/Cloud Computing
+  - Cloud Native
+  - Databases
   - Large Language Models (LLMs)
 
 # Education to show in About widget
@@ -41,7 +42,7 @@ education:
     #   year: 2009
     - course: B.E in Communication Engineering
       institution: Southern University of Science and Technology (SUSTech)
-      year: 2015 — 2019
+      year: 2019
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -82,10 +83,10 @@ email: "wxp_sampson@163.com"
 highlight_name: true
 ---
 
-I am a Software Development Engineer (SDE) at [SenseTime](https://www.sensetime.com). My Chinese name is W&egrave;i Xi&abreve;o P&eacute;ng.
-
-I have broad research interests in **Distributed System Design, Cloud Native/Cloud Computing, Large Language Models (LLMs)**.
+I'm working as a Software Development Engineer (SDE) at [SenseTime](https://www.sensetime.com). I have broad research interests in **Distributed System Design, Cloud Native, Databases, Large Language Models (LLMs)**.
 {style="text-align: justify;"}
 
 I got my B.Eng degrees from [Southern University of Science and Technology (SUSTech)](https://www.sustech.edu.cn/en/) in 2019, respectively.
 {style="text-align: justify;"}
+
+My Chinese name is 魏晓鹏, which pronunciation is W&egrave;i Xi&abreve;o P&eacute;ng.

@@ -38,7 +38,7 @@ sections:
   - block: about.biography
     id: about
     content:
-      title: Biography
+      title: Bio
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
   - block: experience
@@ -63,8 +63,11 @@ sections:
           description: |2-
               Responsibilities include:
 
-              * LLM QA platform development, which can support private deployment.
-              * Retrieve relevant context according to query as LLM Prompt context.
+              * Developing **LLMs Q&A** platform, which can be deployed in a private environment.
+              * Contributing for retrieve engine service, which will retrieve relevant context according to query as prompt context.
+
+              Tool:
+              * Python, FastApi, Milvus, Minio, TiDB, K8s.
         - title: Software Development Engineer
           company: SenseTime
           company_url: ""
@@ -75,7 +78,7 @@ sections:
           description: |2-
               Responsibilities include:
 
-              * Develop PAAS platform device manager service(DMS) and image ingress/egress service(IIS).
+              * Developed two PAAS platform engine service: **device manager service(DMS)** and **image ingress/egress service(IIS)**.
               * Normalize data from different sources into a unified format within the system.
         - title: Software Development Engineer In Test
           company: SenseTime
@@ -87,7 +90,7 @@ sections:
           description: |2-
               Responsibilities include:
 
-              * Develop python scripts for auto-testing, which including functional testing, business flow testing, performance testing, accuracy testing. 
+              * Developed python scripts for auto-testing, which including functional testing, business flow testing, performance testing, accuracy testing. 
               * Responsible for daily CI/CD for target platform egnine services.
     design:
       columns: "2"

@@ -17,7 +17,7 @@ weight: 7
 
 **不允许修改** 链表。
 
-https://leetcode.cn/problems/linked-list-cycle-i/
+https://leetcode.com/problems/linked-list-cycle-i/
 
 **Example 1:**
 
@@ -50,9 +50,9 @@ https://leetcode.cn/problems/linked-list-cycle-i/
 ## 代码 (Code)
 
 - 时间复杂度：
-  - `O(n)`：`n` 代表链表 `head` 的长度。
+  - $O(n)$：`n` 代表链表 `head` 的长度。
 - 空间复杂度：
-  - `O(1)`：只使用了两个指针的额外空间。
+  - $O(1)$：只使用了两个指针的额外空间。
 
 {{< tabs tabTotal="4">}}
 {{< tab tabName="Go">}}

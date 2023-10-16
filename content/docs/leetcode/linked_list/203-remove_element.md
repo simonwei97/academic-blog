@@ -11,7 +11,7 @@ weight: 1
 
 给你一个链表的头节点 `head` 和一个整数 `val` ，请你删除链表中所有满足 `Node.val == val` 的节点，并返回 **新的头节点** 。
 
-https://leetcode.cn/problems/remove-linked-list-elements/
+https://leetcode.com/problems/remove-linked-list-elements/
 
 **Example 1:**
 
@@ -45,8 +45,8 @@ https://leetcode.cn/problems/remove-linked-list-elements/
 
 ## 代码 (Code)
 
-- 时间复杂度：`O(n)`
-- 空间复杂度：`O(1)`
+- 时间复杂度：$O(n)$
+- 空间复杂度：$O(1)$
 
 {{< tabs tabTotal="4">}}
 {{< tab tabName="Go">}}

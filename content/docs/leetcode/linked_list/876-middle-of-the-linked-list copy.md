@@ -13,7 +13,7 @@ weight: 9
 
 如果有两个中间结点，则返回第二个中间结点。
 
-https://leetcode.cn/problems/middle-of-the-linked-list/
+https://leetcode.com/problems/middle-of-the-linked-list/
 
 **Example 1:**
 
@@ -39,9 +39,9 @@ https://leetcode.cn/problems/middle-of-the-linked-list/
 ## 代码 (Code)
 
 - 时间复杂度：
-  - `O(n)`：`n` 代表链表 `head` 的长度。
+  - $O(n)$：`n` 代表链表 `head` 的长度。
 - 空间复杂度：
-  - `O(1)`：未使用额外空间存储
+  - $O(1)$：未使用额外空间存储
 
 {{< tabs tabTotal="4">}}
 {{< tab tabName="Go">}}

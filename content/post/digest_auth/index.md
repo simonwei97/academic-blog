@@ -106,17 +106,6 @@ Cookie: Secure
 Connection: close
 ```
 
-```bash
-Signature = URL-Encode( Base64( HMAC-SHA1( YourSecretAccessKey, UTF-8-Encoding-Of( StringToSign ) ) ) );
-
-StringToSign = HTTP-VERB + "\n" +
-        Content-MD5 + "\n" +
-        Content-Type + "\n" +
-        Expires + "\n" +
-        CanonicalizedAmzHeaders +
-        CanonicalizedResource;
-```
-
 ## 代码计算 Signature
 
 ```python

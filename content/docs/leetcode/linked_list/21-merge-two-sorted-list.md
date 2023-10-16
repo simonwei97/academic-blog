@@ -11,7 +11,7 @@ weight: 10
 
 将两个升序链表合并为一个新的 **升序** 链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。
 
-https://leetcode.cn/problems/merge-two-sorted-lists/
+https://leetcode.com/problems/merge-two-sorted-lists/
 
 **Example 1:**
 
@@ -46,7 +46,7 @@ https://leetcode.cn/problems/merge-two-sorted-lists/
 - 时间复杂度：
   - `O(m+n)`：`m` 和 `n` 分别代表两个链表的长度。
 - 空间复杂度：
-  - `O(1)`：未使用额外空间存储
+  - $O(1)$：未使用额外空间存储
 
 {{< tabs tabTotal="4">}}
 {{< tab tabName="Go">}}

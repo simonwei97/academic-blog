@@ -11,8 +11,7 @@ weight: 3
 
 给你一个按 **非递减顺序** 排序的整数数组` nums`，返回 **每个数字的平方** 组成的新数组，要求也按 **非递减顺序** 排序。
 
-- https://leetcode.cn/problems/squares-of-a-sorted-array/
-- https://leetcode.com/problems/squares-of-a-sorted-array/
+https://leetcode.com/problems/squares-of-a-sorted-array/
 
 **Example 1:**
 
@@ -41,8 +40,8 @@ weight: 3
 
 ## 代码 (Code)
 
-- 时间复杂度：`O(n)`
-- 空间复杂度：`O(1)`
+- 时间复杂度：$O(n)$
+- 空间复杂度：$O(1)$
 
 {{< tabs tabTotal="4">}}
 {{< tab tabName="Go">}}

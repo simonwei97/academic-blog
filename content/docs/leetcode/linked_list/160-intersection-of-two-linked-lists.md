@@ -13,7 +13,7 @@ weight: 6
 
 图示两个链表在节点 `c1` 开始相交：
 
-https://leetcode.cn/problems/intersection-of-two-linked-lists/
+https://leetcode.com/problems/intersection-of-two-linked-lists/
 
 **Example 1:**
 
@@ -56,7 +56,7 @@ https://leetcode.cn/problems/intersection-of-two-linked-lists/
 - 时间复杂度：
   - `O(m+n)`：`m` 和 `n` 分别代表链表 `headA` 和 `headB` 的长度。
 - 空间复杂度：
-  - `O(1)`：未使用额外空间存储
+  - $O(1)$：未使用额外空间存储
 
 {{< tabs tabTotal="4">}}
 {{< tab tabName="Go">}}

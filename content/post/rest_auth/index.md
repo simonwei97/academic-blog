@@ -1,9 +1,9 @@
 ---
-title: RESTAuthentication (JWT token)
-subtitle: 简要介绍 RESTAuthentication.
+title: RESTful Authentication (JWT token)
+subtitle: 简要介绍 RESTful Authentication.
 
 # Summary for listings and search engines
-summary: 简要介绍 RESTAuthentication
+summary: 简要介绍 RESTful Authentication
 
 # Link this post with a project
 projects: []
@@ -47,21 +47,9 @@ categories:
 
 ## 概述
 
-许多 `REST API` 目前都需要身份验证，或者如果您已通过身份验证，则返回其他信息。此外，当您通过身份验证时，您可以每小时发出更多请求。
+当前，访问对象存储服务时，可通过 `RESTful API` 对 `S3` 发起 `HTTP` 匿名请求或者 `HTTP` 签名请求，`S3` 服务端将会对请求发起者进行身份验证。
 
-以 GitHub 中 API 使用为例。
-
-```bash
-curl --request GET \
---url "https://api.github.com/octocat" \
---header "Authorization: Bearer YOUR-TOKEN" \
---header "X-GitHub-Api-Version: 2022-11-28"
-
-```
-
-`Authorization` 请求标头结构的伪代码 [^1]：
-
-> 参考 AWS S3 中的身份验证标头部分。
+对于签名方式，一般都是是使用 `Authorization` 进行资源访问，参考 `AWS S3` `Authorization` 请求标头结构的伪代码 [^1]：
 
 ```bash
 Authorization = "AWS" + " " + AWSAccessKeyId + ":" + Signature;
@@ -92,10 +80,30 @@ CanonicalizedAmzHeaders = <described below>
 - `CanonicalizedAmzHeaders`: 请求中所有以 `x-amz-`开始的头所组成的字符串,如果没有这样的头，由空字符串代替
 - `CanonicalizedResource`: 请求所对应的资源
 
-## 特点
+## canonicalizedResource 取值示例
 
-- `JWT` 默认不加密，但也是可以进行二次加密的。
-- `JWT` 目前基本都使用 `HTTPS` 协议传输，而不使用（且不应该使用）`HTTP` 协议进行明码传输。
+一般 的结构如下
+
+```bash
+/[BucketName/[ObjectKey[?SubResource]]]
+```
+
+以下为示例
+
+```bash
+GET /?foo=bar
+GET /bucket/key?foo=bar
+GET /bucket/key?aaa&foo=bar
+
+```
+
+对应的 canonicalizedResource
+
+```bash
+／
+/bucket/key
+/bucket/key?aaa
+```
 
 ## Go 代码计算 Signature
 

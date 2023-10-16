@@ -11,7 +11,7 @@ weight: 5
 
 给你一个链表，删除链表的倒数第 `n` 个结点，并且返回链表的头结点。
 
-https://leetcode.cn/problems/remove-nth-node-from-end-of-list/
+https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 
 **Example 1:**
 
@@ -45,9 +45,9 @@ https://leetcode.cn/problems/remove-nth-node-from-end-of-list/
 ## 代码 (Code)
 
 - 时间复杂度：
-  - `O(n)`：两两交换需要遍历整个链表，每次操作需要 `O(1)` 复杂度
+  - $O(n)$：两两交换需要遍历整个链表，每次操作需要 $O(1)$ 复杂度
 - 空间复杂度：
-  - `O(1)`：使用常数级的额外空间，不随 `N` 变化
+  - $O(1)$：使用常数级的额外空间，不随 `N` 变化
 
 {{< tabs tabTotal="4">}}
 {{< tab tabName="Go">}}
