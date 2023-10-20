@@ -83,10 +83,12 @@ email: "wxp_sampson@163.com"
 highlight_name: true
 ---
 
-I'm working as a Software Development Engineer (SDE) at [SenseTime](https://www.sensetime.com). I have broad research interests in **Distributed System Design, Cloud Native, Databases, Large Language Models (LLMs)**.
+I am working as a Software Development Engineer (SDE) at [SenseTime](https://www.sensetime.com). I have broad research interests in **Distributed System Design, Cloud Native, Databases, Large Language Models (LLMs)**.
 {style="text-align: justify;"}
 
 I got my B.Eng degrees from [Southern University of Science and Technology (SUSTech)](https://www.sustech.edu.cn/en/) in 2019, respectively.
 {style="text-align: justify;"}
 
-My Chinese name is 魏晓鹏, which pronunciation is W&egrave;i Xi&abreve;o P&eacute;ng.
+My Chinese name is 魏晓鹏.
+
+<!-- which pronunciation is W&egrave;i Xi&abreve;o P&eacute;ng. -->

@@ -33,7 +33,7 @@ https://leetcode.com/problems/spiral-matrix-ii/
 
 ## 分析 (Analysis)
 
-在一个**左闭右闭**的区间里，`[left, right]`。
+按层模拟，可以将矩阵看成若干层，首先填入矩阵最外层的元素，其次填入矩阵次外层的元素，直到填入矩阵最内层的元素。
 
 ## 代码 (Code)
 

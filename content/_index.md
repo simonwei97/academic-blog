@@ -38,7 +38,7 @@ sections:
   - block: about.biography
     id: about
     content:
-      title: Bio
+      title: About Me
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
   - block: experience
@@ -63,11 +63,8 @@ sections:
           description: |2-
               Responsibilities include:
 
-              * Developing **LLMs Q&A** platform, which can be deployed in a private environment.
-              * Contributing for retrieve engine service, which will retrieve relevant context according to query as prompt context.
-
-              Tool:
-              * Python, FastApi, Milvus, Minio, TiDB, K8s.
+              * Developing **Generic LLMs-powered Chatbot system**, which based on external knowledge bases.
+              * Contributing for **retrieval engine service**, which will retrieve relevant context by semantic search (top-k) from VectorDB, results will be as LLM prompt context.
         - title: Software Development Engineer
           company: SenseTime
           company_url: ""
@@ -78,8 +75,9 @@ sections:
           description: |2-
               Responsibilities include:
 
-              * Developed two PAAS platform engine service: **device manager service(DMS)** and **image ingress/egress service(IIS)**.
-              * Normalize data from different sources into a unified format within the system.
+              * Developed device manager service(DMS), which will manage all devies in whole PAAS platform, which includes cameras, platforms and so on.
+              * Developed image ingress/egress service(IIS). It can processed different protocol/formats data into an unified format. Cleaned and filtered Data will be send to Kafka eventually.
+              * Refactored image deliveration flow for IIS. Performance improved by almost **20%** after that.
         - title: Software Development Engineer In Test
           company: SenseTime
           company_url: ""
@@ -90,8 +88,8 @@ sections:
           description: |2-
               Responsibilities include:
 
-              * Developed python scripts for auto-testing, which including functional testing, business flow testing, performance testing, accuracy testing. 
-              * Responsible for daily CI/CD for target platform egnine services.
+              * Developed scripts for auto-testing, which including functional testing, business flow testing, performance testing, accuracy testing with Python. 
+              * Performed CI/CD for serval target platform egnine services.
     design:
       columns: "2"
   # - block: accomplishments
