@@ -67,9 +67,11 @@ class Solution:
         """
         Do not return anything, modify s in-place instead.
         """
-        n = len(s)
-        for i in range(n // 2):
-            s[i], s[n - i - 1] = s[n - i - 1], s[i]
+        left, right = 0, len(s) - 1
+        while left < right:
+            s[left], s[right] = s[right], s[left]
+            left += 1
+            right -= 1
 ```
 
 {{< /tab >}}

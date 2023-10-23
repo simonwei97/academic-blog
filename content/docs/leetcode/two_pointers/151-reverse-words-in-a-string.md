@@ -4,7 +4,7 @@ linktitle: 151. 反转字符串中的单词
 type: book
 date: "2022-05-05T00:00:00+01:00"
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 1
+weight: 2
 ---
 
 ## 描述
@@ -48,7 +48,7 @@ https://leetcode.com/problems/reverse-words-in-a-string/
 ## 代码
 
 - 时间复杂度：$O(n)$
-- 空间复杂度：$O(1)$
+- 空间复杂度：$O(1)$ ，不同语言不同。如 Python 中字符串为不可变类型，复杂度为 $O(n)$。
 
 {{< tabs tabTotal="2">}}
 
@@ -108,15 +108,25 @@ func reverse(b *[]byte, left, right int) {
 
 ```py
 class Solution:
-    def reverseString(self, s: List[str]) -> None:
-        """
-        Do not return anything, modify s in-place instead.
-        """
-        n = len(s)
-        for i in range(n // 2):
-            s[i], s[n - i - 1] = s[n - i - 1], s[i]
+    def reverseWords(self, s: str) -> str:
+        s = s.strip() # 删除首尾空格
+        i = j = len(s) - 1
+        res = []
+        while i >= 0:
+            while i >= 0 and s[i] != ' ': i -= 1 # 搜索首个空格
+            res.append(s[i + 1: j + 1]) # 添加单词
+            while s[i] == ' ': i -= 1 # 跳过单词间空格
+            j = i # j 指向下个单词的尾字符
+        return ' '.join(res) # 拼接并返回
+
+# author: Krahets
+# https://leetcode.cn/problems/reverse-words-in-a-string/solutions/195397/151-fan-zhuan-zi-fu-chuan-li-de-dan-ci-shuang-zh-2/
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+## Refer:
+
+- [ACM 解题](https://leetcode.cn/problems/reverse-words-in-a-string/solutions/1167554/acm-xuan-shou-tu-jie-leetcode-fan-zhuan-moi5x/)

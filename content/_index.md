@@ -63,7 +63,7 @@ sections:
           description: |2-
               Responsibilities include:
 
-              * Developing **Generic LLMs-powered Chatbot system**, which based on external knowledge bases.
+              * Developing **Generic LLMs-powered Chatbot System**, which based on external knowledge bases.
               * Contributing for **retrieval engine service**, which will retrieve relevant context by semantic search (top-k) from VectorDB, results will be as LLM prompt context.
         - title: Software Development Engineer
           company: SenseTime
@@ -77,7 +77,7 @@ sections:
 
               * Developed device manager service(DMS), which will manage all devies in whole PAAS platform, which includes cameras, platforms and so on.
               * Developed image ingress/egress service(IIS). It can processed different protocol/formats data into an unified format. Cleaned and filtered Data will be send to Kafka eventually.
-              * Refactored image deliveration flow for IIS. Performance improved by almost **20%** after that.
+              * Refactored image deliveration flow which improved performance almost **20%** after that.
         - title: Software Development Engineer In Test
           company: SenseTime
           company_url: ""
