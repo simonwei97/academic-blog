@@ -40,7 +40,7 @@ education:
     # - course: MEng in Artificial Intelligence
     #   institution: Massachusetts Institute of Technology
     #   year: 2009
-    - course: B.E in Communication Engineering
+    - course: B.Eng in Communication Engineering
       institution: Southern University of Science and Technology (SUSTech)
       year: 2019
 
@@ -72,9 +72,9 @@ social:
   # Link to a PDF of your resume/CV.
   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
   # and uncomment the lines below.
-  - icon: cv
-    icon_pack: ai
-    link: cv/cv_en.pdf
+  # - icon: cv
+  #   icon_pack: ai
+  #   link: cv/cv_en.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: "wxp_sampson@163.com"
@@ -90,5 +90,8 @@ I got my B.Eng degrees from [Southern University of Science and Technology (SUST
 {style="text-align: justify;"}
 
 My Chinese name is 魏晓鹏.
+
+:smile: Here is my latest CV, english version [CV_EN](cv/cv_en.pdf) and chinese version [CV_ZH](cv/cv_zh.pdf), which updated at 2023/11/1.
+{style="color: red"}
 
 <!-- which pronunciation is W&egrave;i Xi&abreve;o P&eacute;ng. -->

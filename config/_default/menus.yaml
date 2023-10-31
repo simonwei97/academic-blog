@@ -28,7 +28,7 @@ main:
     parent: docs
     url: "docs/interview"
     weight: 30
-    
+
   # - name: Publications
   #   url: "#featured"
   #   weight: 50
@@ -36,9 +36,19 @@ main:
     url: "#contact"
     weight: 60
   - name: CV
-    url: "#cv"
+    identifier: cv
     weight: 70
+  - name: EN
+    parent: cv
     url: "cv/cv_en.pdf"
+    weight: 10
+  - name: ZH
+    parent: cv
+    url: "cv/cv_zh.pdf"
+    weight: 20
+  # - name: CV
+  #   weight: 70
+  #   url: "cv/cv_en.pdf"
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
 #  - name: CV

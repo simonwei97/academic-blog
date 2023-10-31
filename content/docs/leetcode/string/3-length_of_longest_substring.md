@@ -43,7 +43,7 @@ https://leetcode.com/problems/longest-substring-without-repeating-characters/
 ## 代码
 
 - 时间复杂度：$O(n)$ 。其中 $n$ 是字符串的长度。长度为 $1$ 和 $2$ 的回文中心分别有 $n-1$ 和 $n-2$ 个，每个回文中心最多会向外扩展 $O(n)$ 次。
-- 空间复杂度：$O(|\Sigma|)$ 。其中 $\Sigma$ 表示字符集。
+- 空间复杂度：$O(|\varSigma|)$ 。其中 $\varSigma$ 表示字符集。
 
 {{< tabs tabTotal="2">}}
 
@@ -81,7 +81,7 @@ class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         occur = set()
         n = len(s)
-        # rk表示还没有开始移动，位于字符串的左侧。
+        # rk表示右指针，-1指还没有开始移动，位于字符串的左侧。
         rk, ans = -1, 0
         for i in range(n):
             if i != 0:
@@ -91,6 +91,7 @@ class Solution:
                  # 不断地移动右指针
                 occur.add(s[rk + 1])
                 rk += 1
+            # i 到 rk 个字符是一个无重复字符子串
             ans = max(ans, rk - i + 1)
 
         return ans
