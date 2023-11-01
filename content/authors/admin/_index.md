@@ -26,9 +26,9 @@ organizations:
 
 # Interests to show in About widget
 interests:
-  - Distributed System Design
+  - Distributed System
   - Cloud Native
-  - Databases
+  - ML/AI
   - Large Language Models (LLMs)
 
 # Education to show in About widget
@@ -83,7 +83,7 @@ email: "wxp_sampson@163.com"
 highlight_name: true
 ---
 
-I am working as a Software Development Engineer (SDE) at [SenseTime](https://www.sensetime.com). I have broad research interests in **Distributed System Design, Cloud Native, Databases, Large Language Models (LLMs)**.
+I am working as a **SDE** at [SenseTime](https://www.sensetime.com). I have broad interests in **Distributed System, Cloud Native, ML/AI, Large Language Models (LLMs)**.
 {style="text-align: justify;"}
 
 I got my B.Eng degrees from [Southern University of Science and Technology (SUSTech)](https://www.sustech.edu.cn/en/) in 2019, respectively.

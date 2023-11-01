@@ -64,7 +64,7 @@ sections:
               Responsibilities include:
 
               * Developing **Generic LLMs-powered Chatbot System**, which based on external knowledge bases.
-              * Contributing for **retrieval engine service**, which will retrieve relevant context by semantic search (top-k) from VectorDB, results will be as LLM prompt context.
+              * Contributing for **retrieval engine service**, which will retrieve relevant context by semantic search (top-k) from VectorDB, results will be as **LLM Prompt** context.
         - title: Software Development Engineer
           company: SenseTime
           company_url: ""
