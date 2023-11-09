@@ -39,10 +39,10 @@ authors:
 
 tags:
   - Go
-  - 开源
+  - ASAN
 
 categories:
-  - 教程
+  - Tutorial
 # Book page type (do not modify).
 # type: book
 ---
