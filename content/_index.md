@@ -53,7 +53,7 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: Software Development Engineer
+        - title: Software Engineer
           company: SenseTime
           company_url: ""
           company_logo: sensetime
@@ -65,7 +65,7 @@ sections:
 
               * Developing **Generic LLMs-powered Chatbot System**, which based on external knowledge bases.
               * Contributing for **retrieval engine service**, which will retrieve relevant context by semantic search (top-k) from VectorDB, results will be as **LLM Prompt** context.
-        - title: Software Development Engineer
+        - title: Software Engineer
           company: SenseTime
           company_url: ""
           company_logo: sensetime
@@ -78,7 +78,7 @@ sections:
               * Developed device manager service(DMS), which will manage all devies in whole PAAS platform, which includes cameras, platforms and so on.
               * Developed image ingress/egress service(IIS). It can processed different protocol/formats data into an unified format. Cleaned and filtered Data will be send to Kafka eventually.
               * Refactored image deliveration flow which improved performance almost **20%** after that.
-        - title: Software Development Engineer In Test
+        - title: Software Engineer In Test
           company: SenseTime
           company_url: ""
           company_logo: sensetime
