@@ -1,12 +1,12 @@
 ---
-title: SDE Interview
+title: Misc
 type: book # Do not modify.
 toc: true
 icon: laptop-code
 icon_pack: fas
 ---
 
-👉 Welcome to the _SDE Interview_ !
+👉 Welcome !
 
 ## Interview
 
@@ -43,7 +43,7 @@ Other
 - [Startups Job](https://startup.jobs/startups)
 - [Remote Engineer Jobs](https://freshremote.work/engineer-remote-jobs/)
 
-## Chinese Info
+## Basic
 
 - [小林 x 图解计算机基础](https://xiaolincoding.com/)
 - [Go 程序员面试笔试宝典](https://golang.design/go-questions/)

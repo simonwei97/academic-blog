@@ -91,7 +91,7 @@ I got my B.Eng degrees from [Southern University of Science and Technology (SUST
 
 My Chinese name is 魏晓鹏.
 
-:smile: Here is my latest CV, chinese version [CV_ZH](cv/cv_zh.pdf), which updated at 2023/11/1. English version [CV_EN](cv/cv_en.pdf) need to be updated.
+:smile: Here is my latest CV, chinese version [CV_ZH](cv/cv_zh.pdf), which updated at 2023/11/13. English version [CV_EN](cv/cv_en.pdf) is out of date.
 {style="color: red"}
 
 <!-- which pronunciation is W&egrave;i Xi&abreve;o P&eacute;ng. -->

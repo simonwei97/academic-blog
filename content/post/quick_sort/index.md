@@ -114,7 +114,7 @@ def partition(nums: List[int], low: int, high: int):
         return
 
     l, r = low, high
-    mid = (r - l) / 2 + l
+    mid = int((r - l) / 2 + l)
     pivot = nums[mid]
     while l <= r:
         while l <= r and nums[l] < pivot:
